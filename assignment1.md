@@ -46,7 +46,7 @@ Given a few circumstances, try to think in objects and design the objects and be
 >StudentUsers ruby;
 >ManagerUsers siva;
 >siva.login(emailAddress, password);
->Course info5100 = siva.addCourse(courseName, courseTime, Summary, Announcements, Grades, People, Files);
+>Course info5100 = siva.addCourse(courseName, courseTime, summary, assignments, announcements, grades, people, files);
 >System canvas;
 >canvas.showList(dashboard, calendar, notifications);
 >Dashboard dashboard = siva.addCourse(info5100.courseName);
