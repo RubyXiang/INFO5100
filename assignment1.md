@@ -50,12 +50,12 @@ Given a few circumstances, try to think in objects and design the objects and be
 >System canvas;
 >canvas.showList(dashboard, calendar, notifications);
 >Dashboard dashboard = siva.addCourse(info5100.courseName);
->if info5100 isEstablish
+>if ruby enrollToInfo5100
 >  ruby.login(emailAddress, password);
 >  ruby.joinCourse(info5100);
 >  canvas.showCourseInCalendar(info5100.courseName, info5100.courseTime);
 >  dashborad.showCourse(info5100);
->  if Notifications shouldBeSent
+>  if notifications shouldBeSent
 >    canvas.sendNotifications(notifications);
 >    ruby.checkNotifications(canvas.notifications);
 >    if course isFinished
@@ -63,17 +63,17 @@ Given a few circumstances, try to think in objects and design the objects and be
 >      ruby.downloadFiles(info5100.files);
 >      siva.addAssignments(info5100.assignments, info5100.assignmentDeadline);
 >      canvas.addDeadlineToCalendar(info5100.assignmentDeadline);
->      if Assignments isFinished 
+>      if assignments isFinished 
 >        ruby.submitAssignments(info5100.assignments);
->      else if Assignments isModified
+>      else if assignments isModified
 >        ruby.resubmitAssignments(info5100.assignments);
 >      else
 >        dashboard.sendAlert(info5100.assignmentDeadline);
 >        ruby.dismissAlert(info5100.assignmentDeadline);
->        if Assignments isDue
+>        if assignments isDue
 >          siva.uploadGrades(ruby.grades);
 >          ruby.checkGrades(ruby.grades);
->            if Grades isWrong
+>            if grades isWrong
 >              siva.changeGrades(ruby.grades);
 >else
 >  siva.cancelCourse(info5100);  
