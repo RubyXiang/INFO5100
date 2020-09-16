@@ -5,22 +5,35 @@ Given a few circumstances, try to think in objects and design the objects and be
 
 1.Design a course management system (Like Canvas);
 
-2.Design a pet adoption platform
+2.Design a pet adoption platform;
 
-3.Design an app to book airline ticket.
+3.Design an app to book airline ticket;
 
-4.Design a course registration platform.
+4.Design a course registration platform;
 
-5.Order food in a food delivery app.(Like Uber Eats)
+5.Order food in a food delivery app (Like Uber Eats).
 
 ## Design a course management system (Like Canvas)
+
+-Dashboard
+
+Data:
+Behaviors:
 
 ### Sequence of invoking behaviors on objects
 
 ## Design a pet adoption platform
 
+### Sequence of invoking behaviors on objects
+
 ## Design an app to book airline ticket
+
+### Sequence of invoking behaviors on objects
 
 ## Design a course registration platform
 
+### Sequence of invoking behaviors on objects
+
 ## Order food in a food delivery app (Like Uber Eats)
+
+### Sequence of invoking behaviors on objects
