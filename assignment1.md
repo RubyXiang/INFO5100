@@ -15,6 +15,8 @@ Given a few circumstances, try to think in objects and design the objects and be
 
 ## Design a course management system (Like Canvas)
 
+### Sequence of invoking behaviors on objects
+
 ## Design a pet adoption platform
 
 ## Design an app to book airline ticket
