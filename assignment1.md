@@ -15,12 +15,35 @@ Given a few circumstances, try to think in objects and design the objects and be
 
 ## Design a course management system (Like Canvas)
 
--Dashboard
+- StudentUsers
 
-Data:
-Behaviors:
+Data: emailAddress, Password
+Behaviors: logIn, Search, submitAssignments, resubmitAssignments, checkGrades, downloadFiles, checkNotifications, dismissAlert,
+
+- ManagerUsers
+
+Data: emailAddress, Password
+Behaviors: addSummary, deleteSummary, addAssignments, deleteAssignments, addAnnouncements, deleteAnnouncements, uploadGrades, changeGrades, addPeople, deletePeople, addFiles, deleteFiles
+
+- System
+
+Data: Dashboard, Calendar, Notifications
+Behaviors: showCourseInCalendar, addDeadlineToCalendar, receiveNotifications
+
+- Dashboard
+
+Data: Course, Alert
+Behaviors: addCourse, cancelCourse, sendAlert
+
+- Course
+
+Data: Summary, Assignments, Announcements, Grades, People, Files
+Behaviors: 
 
 ### Sequence of invoking behaviors on objects
+
+StudentUsers Ruby;
+
 
 ## Design a pet adoption platform
 
