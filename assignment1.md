@@ -1,9 +1,11 @@
-# Design a course management system (Like Canvas)
+# Assignment 1
 
-# Design a pet adoption platform
+## Design a course management system (Like Canvas)
 
-# Design an app to book airline ticket
+## Design a pet adoption platform
 
-# Design a course registration platform
+## Design an app to book airline ticket
 
-# Order food in a food delivery app (Like Uber Eats)
+## Design a course registration platform
+
+## Order food in a food delivery app (Like Uber Eats)
