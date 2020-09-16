@@ -42,7 +42,7 @@ Behaviors:
 
 ### Sequence of invoking behaviors on objects
 
-StudentUsers ruby;
+*StudentUsers ruby;
 ManagerUsers siva;
 siva.login(emailAddress, Password);
 Course info5100 = siva.addCourse(courseName, courseTime, Summary, Announcements, Grades, People, Files);
@@ -76,6 +76,7 @@ if info5100 isEstablish
         siva.changeGrades(ruby.Grades);
 else
   siva.cancelCourse(info5100);  
+*
 
 ## Design a pet adoption platform
 
