@@ -45,38 +45,39 @@ Given a few circumstances, try to think in objects and design the objects and be
 >```java
 >StudentUsers ruby;
 >ManagerUsers siva;
->siva.login(emailAddress, Password);
+>siva.login(emailAddress, password);
 >Course info5100 = siva.addCourse(courseName, courseTime, Summary, Announcements, Grades, People, Files);
 >System canvas;
->canvas.showList(Dashboard, Calendar, Notifications);
+>canvas.showList(dashboard, calendar, notifications);
 >Dashboard dashboard = siva.addCourse(info5100.courseName);
 >if info5100 isEstablish
->  ruby.login(emailAddress, Password);
+>  ruby.login(emailAddress, password);
 >  ruby.joinCourse(info5100);
 >  canvas.showCourseInCalendar(info5100.courseName, info5100.courseTime);
 >  dashborad.showCourse(info5100);
 >  if Notifications shouldBeSent
->    canvas.sendNotifications(Notifications);
->    ruby.checkNotifications(canvas.Notifications);
+>    canvas.sendNotifications(notifications);
+>    ruby.checkNotifications(canvas.notifications);
 >    if course isFinished
->      siva.addFiles(info5100.Files);
->      ruby.downloadFiles(info5100.Files);
->      siva.addAssignments(info5100.Assignments, info5100.assignmentDeadline);
+>      siva.addFiles(info5100.files);
+>      ruby.downloadFiles(info5100.files);
+>      siva.addAssignments(info5100.assignments, info5100.assignmentDeadline);
 >      canvas.addDeadlineToCalendar(info5100.assignmentDeadline);
 >      if Assignments isFinished 
->        ruby.submitAssignments(info5100.Assignments);
+>        ruby.submitAssignments(info5100.assignments);
 >      else if Assignments isModified
->        ruby.resubmitAssignments(info5100.Assignments);
+>        ruby.resubmitAssignments(info5100.assignments);
 >      else
 >        dashboard.sendAlert(info5100.assignmentDeadline);
 >        ruby.dismissAlert(info5100.assignmentDeadline);
 >        if Assignments isDue
->          siva.uploadGrades(ruby.Grades);
->          ruby.checkGrades(ruby.Grades);
+>          siva.uploadGrades(ruby.grades);
+>          ruby.checkGrades(ruby.grades);
 >            if Grades isWrong
->              siva.changeGrades(ruby.Grades);
+>              siva.changeGrades(ruby.grades);
 >else
 >  siva.cancelCourse(info5100);  
+>```
 
 ## Design a pet adoption platform
 
