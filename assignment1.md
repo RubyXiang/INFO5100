@@ -73,13 +73,23 @@ Given a few circumstances, try to think in objects and design the objects and be
 >        if assignments isDue
 >          siva.uploadGrades(ruby.grades);
 >          ruby.checkGrades(ruby.grades);
->            if grades isWrong
->              siva.changeGrades(ruby.grades);
+>          if grades isWrong
+>            siva.changeGrades(ruby.grades);
 >else
 >  siva.cancelCourse(info5100);  
 >```
 
 ## Design a pet adoption platform
+
+*- User*
+
+* Data:
+* Behaviors:
+
+*- Pet*
+
+* Data:
+* Behaviors:
 
 ### Sequence of invoking behaviors on objects
 
