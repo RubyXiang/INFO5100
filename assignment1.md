@@ -161,9 +161,44 @@ Given a few circumstances, try to think in objects and design the objects and be
 *- User*
 
 * Data: emailAddress, Password
+* Behaviors: login, search, chooseCourse, dropCourse
+
+*- Manager*
+
+* Data: Account, Password
+* Behaviors: login, addCourse, cancelCourse
+
+*- System*
+
+* Data: Course
+* Behaviors: showCourse, deleteCourse
+
+*- Course*
+
+* Data: Name, Number, Teacher, Time, availableSeat
 * Behaviors:
 
 ### Sequence of invoking behaviors on objects
+
+>```java
+>User ruby;
+>Manager sherry;
+>ruby.login(emailAddress, Password);
+>sherry.login(account, password);
+>System northeasternSystem;
+>Course info5200 = ruby.search(name, number, teacher, time, availableSeat);
+>if sherry addCourse
+>  sherry.addCourse(info5100);
+>  if info5100 isAvailable
+>    ruby.chooseCourse(info5100);
+>    northeasternSystem.showCourse(info5100);
+>    else if ruby changeHerMind
+>      ruby.dropCourse(info5100);
+>      northeasternSystem.deleteCourse(info5100);
+>      northeasternSystem.showCourse(null);
+>else
+>  sherry.cancelCourse(info5100);  
+
 
 ## Order food in a food delivery app (Like Uber Eats)
 
