@@ -119,9 +119,22 @@ Given a few circumstances, try to think in objects and design the objects and be
 >else lovePet hasNoDog
 >```
 
-### Sequence of invoking behaviors on objects
-
 ## Design an app to book airline ticket
+
+*- User*
+
+* Data: emailAddress, Password, Name, creditCard, Phone
+* Behaviors: Login, Search, Pay
+
+*- Platform*
+
+* Data: 
+* Behaviors: checkOut, 
+
+*- Airline*
+
+* Data: Data, Number, 
+* Behaviors:
 
 ### Sequence of invoking behaviors on objects
 
