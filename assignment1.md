@@ -84,7 +84,7 @@ Given a few circumstances, try to think in objects and design the objects and be
 *- User*
 
 * Data: emailAddress, Password, Name, Address, creditCard, Phone
-* Behaviors: Login, Adopt, Search, Pay, chooseTime, reChooseTime, requestCanceAdopt
+* Behaviors: Login, Adopt, Search, Pay, chooseTime, reChooseTime, requestCancelAdopt
 
 *- Platform*
 
@@ -124,19 +124,37 @@ Given a few circumstances, try to think in objects and design the objects and be
 *- User*
 
 * Data: emailAddress, Password, Name, creditCard, Phone
-* Behaviors: Login, Search, Pay
+* Behaviors: Login, Search, Pay, addInformation, chooseSeat, requestCancelOrder
 
 *- Platform*
 
-* Data: 
-* Behaviors: checkOut, 
+* Data: Flight
+* Behaviors: checkOut, sendETickets, refund
 
-*- Airline*
+*- Flight*
 
-* Data: Data, Number, 
+* Data: Date, Number, Terminal, seatType, seatNumber
 * Behaviors:
 
 ### Sequence of invoking behaviors on objects
+
+>```java
+>User ruby;
+>Platform northeasternAirline;
+>ruby.login(emailAddress, password);
+>Flight flight = ruby.search(date, number, terminal, seatType);
+>if ruby orderTickets
+>  ruby.addInformation(name, creditCard, phone);
+>  ruby.pay(flight);
+>  northeasternAirline.checkOut(ruby.name, ruby.creditCard, ruby.phone);
+>  if order isSuccessful
+>    ruby.chooseSeat(flight.seatNumber);
+>    northeasternAirline.sendETickets(ruby.emailAddress);
+>  else if ruby changMind
+>    ruby.requestCancelOrder(flight, northeasternAirline);
+>    northeasternAirline.refund(ruby);
+>else tickt isSoldOut
+>```
 
 ## Design a course registration platform
 
