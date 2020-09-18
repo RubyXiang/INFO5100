@@ -83,13 +83,41 @@ Given a few circumstances, try to think in objects and design the objects and be
 
 *- User*
 
-* Data:
-* Behaviors:
+* Data: emailAddress, Password, Name, Address, creditCard, Phone
+* Behaviors: Login, Adopt, Search, Pay, chooseTime, reChooseTime, requestCanceAdopt
+
+*- Platform*
+
+* Data: petDog, petCat, petBird
+* Behaviors: checkOut, sendAdoptCertificate, sendAdoptTime
 
 *- Pet*
 
-* Data:
+* Data: Breed, Size, Color, adoptPrice, healthCertificate
 * Behaviors:
+
+### Sequence of invoking behaviors on objects
+
+>```java
+>User ruby;
+>Platform lovePet;
+>ruby.login(emailAddress, password);
+>Pet petDog = ruby.search(Breed, Size, Color, adoptPrice, healthCertificate);
+>if lovePet hasPetDog
+>  ruby.adopt(petDog);
+>  ruby.pay(petDog);
+>  lovePet.checkout(ruby.name, ruby.address, ruby.creditCard, ruby.phone);
+>  lovePet.sendAdoptCertificate(ruby.emailAddress);
+>  ruby.chooseTime(petDog);
+>  if adoptTime isAvailable
+>    lovePet.sendAdoptTime(petDog);
+>  else
+>    ruby.rechooseTime(petDog);
+>    lovePet.sendAdoptTime(petDog);
+>    if ruby changeHerMindBeforeAdopt
+>      ruby.requestCancelAdopt(petDog);
+>else lovePet hasNoDog
+>```
 
 ### Sequence of invoking behaviors on objects
 
