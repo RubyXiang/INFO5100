@@ -1,31 +1,26 @@
 # Assignment2-1
 
-/**
- * The deadline of this assignment is 09/25/2020 23:59 PST.
- * Please feel free to contact Yafei and Yaqi for any questions.
- */
-
-class Employee {
-    String name;
-    int age;
-    Gender gender;
-    double salary;// salary per month
-
-    // Constructor. Please set all the data in constructor.
-    public Employee(String name, int age, Gender gender, double salary) {
-        //write your code here
-    }
-
-    // Getter for `name`. Return the current `name` data
-    public String getName() {
-        //write your code here
-    }
-
-    // Setter for `name`. Set `name` data
-    public void setName(String name) {
-        //write your code here
-    }
-}
+>class Employee {
+>    String name;
+>    int age;
+>    Gender gender;
+>    double salary;// salary per month
+>
+>    // Constructor. Please set all the data in constructor.
+>    public Employee(String name, int age, Gender gender, double salary) {
+>        //write your code here
+>    }
+>
+>    // Getter for `name`. Return the current `name` data
+>    public String getName() {
+>        //write your code here
+>    }
+>
+>    // Setter for `name`. Set `name` data
+>    public void setName(String name) {
+>        //write your code here
+>    }
+>}
 
 enum Gender {
     MALE,
