@@ -35,5 +35,8 @@ public class Test {
         Student student11 = new Student("Jayden",100011);
         course.registerStudent(student11);
 
+        Professor employee = new Professor.Builder("Chloe", "Lee",10058)
+                .build();
+
     }
 }
