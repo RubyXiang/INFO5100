@@ -14,9 +14,9 @@ public class Course {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
+    //public void setStudents(List<Student> students) {
+    //    this.students = students;
+    //}
 
     public boolean isFull(int numberOfStudent) {
         if(numberOfStudent >= 10)
@@ -29,9 +29,9 @@ public class Course {
         return numberOfStudent;
     }
 
-    public void setNumberOfStudent(int numberOfStudent) {
-        this.numberOfStudent = numberOfStudent;
-    }
+    //public void setNumberOfStudent(int numberOfStudent) {
+    //    this.numberOfStudent = numberOfStudent;
+    //}
 
     public String getName() {
         return name;
