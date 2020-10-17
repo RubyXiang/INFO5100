@@ -58,9 +58,9 @@ public class Checkout {
             sb.append("-");
         }
         sb.append("\n");
-        // each item
-        for (DessertItem d: dessertItems) {
-            sb.append(d);
+        
+        for (DessertItem dessert: dessertItems) {
+            sb.append(dessert);
             sb.append("\n");
         }
         sb.append("\n");
